@@ -1,4 +1,10 @@
 /********** Template CSS **********/
+/* :root {
+    --primary: #FB5B21;
+    --secondary: #BDBDBF;
+    --light: #F4F5F8;
+    --dark: #222429;
+} */
 :root {
     --primary: #FB5B21;
     --secondary: #BDBDBF;
@@ -14,7 +20,7 @@
     margin-left: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -41,6 +47,62 @@ h6,
     text-transform: uppercase;
     transition: .5s;
 }
+
+.custom-video-container {
+    position: relative;
+    /* Set your desired width here */
+    height: 225px;
+    /* Set your desired height here */
+}
+
+/* Style the embedded iframe to fill the container */
+.custom-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.foam-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+    /* Color of the thumb */
+    border-radius: 5px;
+    /* Rounded corners for the thumb */
+}
+
+/* Customize the scrollbar track when it's hovered over */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Customize the scrollbar track when it's active (being dragged) */
+::-webkit-scrollbar-thumb:active {
+    background-color: white;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+    background-color: white;
+    /* Color of the track */
+}
+
 
 .btn-primary {
     color: #FFFFFF;
@@ -94,7 +156,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar-dark .navbar-nav .nav-link  {
+    .navbar-dark .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -138,7 +200,7 @@ h6,
 }
 
 .programe::after {
-    position :absolute;
+    position: absolute;
     content: "";
     width: 100%;
     height: calc(100% - 45px);
@@ -185,7 +247,7 @@ h6,
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next{
+.testimonial-carousel .owl-nav .owl-next {
     position: relative;
     margin: 0 5px;
     width: 45px;
