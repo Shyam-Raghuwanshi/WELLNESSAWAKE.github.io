@@ -64,8 +64,19 @@ h6,
     height: 100%;
 }
 
-section {
-    padding-top: 5rem;
+.chooseSignUPTypeImg{
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel_img_signup_user{
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel_img_signup_mentor{
+    height: 100vh;
+    width: 100%;
 }
 
 .foam-container {
@@ -285,3 +296,5 @@ section {
         background: var(--primary);
     }
 }
+
+

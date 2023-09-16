@@ -71,29 +71,28 @@
     <!-- Header End -->
 
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary p-5 bg-hero mb-5">
-        <div class="row py-5">
-            <div class="col-12 text-center">
-                <h1 class="display-2 text-uppercase text-white mb-md-4">Login</h1>
-                <a href="index.html" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
-                <a href="#login" class="btn btn-light py-md-3 px-md-5">Login</a>
+    <!-- Hero Start-->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carousel_img_signup_user" src="img/home.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Best Center to maintain your Health</h5>
+                            <h1 class="display-2 text-white text-uppercase mb-md-4">Make Yourself Healthy With
+                                WellnessAwake</h1>
+                            <a href="signup.html" class="btn btn-primary py-md-3 px-md-5 me-3">Join Us</a>
+                            <a href="contact.html" class="btn btn-light py-md-3 px-md-5">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        </div>
     </div>
-</div>
-
+    <!-- Hero End -->
     <!-- Contact Start -->
-    <section id="login">
+    <section id="signup">
         <form>
             <div class="container-fluid p-5">
 
@@ -102,7 +101,14 @@
                         <div class="bg-dark p-5">
                             <form>
                                 <div class="row g-3">
-                                   
+                                    <div class="col-12">
+                                        <input type="text" required class="form-control bg-light border-0 px-4"
+                                            placeholder="Your Name" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="number" required class="form-control bg-light border-0 px-4"
+                                            placeholder="Number" style="height: 55px;">
+                                    </div>
                                     <div class="col-12">
                                         <input type="email" required class="form-control bg-light border-0 px-4"
                                             placeholder="Your Email" style="height: 55px;">
@@ -113,8 +119,9 @@
                                     </div>
 
 
+
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Login</button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Create Account</button>
                                     </div>
                                 </div>
                             </form>
